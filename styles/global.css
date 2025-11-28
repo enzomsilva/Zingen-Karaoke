@@ -1,1 +1,81 @@
-@import url(global.css);
+*,
+*::before,   
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+    /*By adding the ::before and the ::after, if you use this pseudo-classes the style will be applied to both too. Otherwise if it was just the * wouldn't.*/ 
+}
+
+:root {
+    --bg-color: #09090B;
+    --surface-color: #18181B;
+    --stroke-color: #27272A;
+    --text-color-primary: #F4F4F5;
+    --text-color-secondary: #A1A1AA;
+    --brand-color-gradient: #FC4A1A #F7B733;
+    --brand-color-primary: #F7B733;
+    --brand-color-secondary: #FC4A1A;
+    --brand-gradient: linear-gradient(90deg, #FC4A1A 0%, #F7B733 100%);
+
+    --ff-sans: 'Inter', system-ui, sans-serif;
+    --fw-base: 400;
+    --fw-md: 500;
+    --fw-eb: 800;
+
+    --fs-xxl: 2.5rem;
+    --fs-xl: 1.5rem;
+    --fs-lg: 1.25rem;
+    --fs-regular: 1rem;
+    --fs-sm: 0.875rem;
+}
+
+html {
+    font-family: var(--ff-sans);
+    font-weight: var(fw-base);
+    font-size: var(--fs-regular);
+    line-height: 1.6;
+    color: var(--text-color-primary);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    font-weight: var(--fw-eb);
+    /*Remember to see if you need to put the letter-spacing*/
+}
+
+h1 {
+    font-size: var(--fs-xxl);
+}
+
+h2 {
+    font-size: var(--fs-xl);
+}
+
+h3 {
+    font-size: var(--fs-lg);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul[role="list"] {
+    list-style: none;
+}
+
+/* ---------- Desktop ------------ */
+
+@media (width >= 80em) {
+    :root {
+        --fs-xxl: 4rem;
+        --fs-xl: 3rem;
+        --fs-lg: 2rem;
+    }
+}
