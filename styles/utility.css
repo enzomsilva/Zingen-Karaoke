@@ -20,6 +20,14 @@
     gap: 1rem;
 }
 
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
 .container {
     --max-width: 375px;
     width: min(var(--max-width), 100% - var(--padding-x) * 2);

@@ -11,16 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container column-display">
-        <h2>LADO A</h2>
-        <h2>LADO B</h2>
-        <h2>LADO C</h2>
-        <h2>LADO D</h2>
-        <h2>LADO E</h2>
-        <h2>LADO F</h2>
-        <h2>LADO G</h2>
-        <h2>LADO H</h2>
-        <h2>LADO I</h2>
+    <div class="flex">
+    <a href="#" class="btn">Label</a>
+    <button class="btn btn-lg">Label</button>
+    <a href="#" class="btn btn-sm">Label</a>
+
+    <a href="#" aria-label="Label" class="btn"></a>
+    <button aria-label="Label" class="btn btn-lg"></button>
+    <a href="#" aria-label="Label" class="btn btn-sm"></a>
     </div>
+
+    <style>
+        div {
+            gap: 1rem;
+        }
+    </style>
 </body>
 </html>

@@ -1,0 +1,57 @@
+.btn {
+    border: 0;
+    background-color: transparent;
+    border-radius: .5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    font: var(--fw-md) var(--fs-regular)/1.5rem var(--ff-sans);
+    cursor: pointer;
+
+    background: var(--text-color-primary);
+    color: var(--bg-color);
+    padding: .75rem 1.5rem;
+}
+
+.btn:hover {
+    background: var(--brand-gradient);
+}
+
+.btn-lg {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+}
+
+.btn-sm {
+    font-size: var(--fs-sm);
+    padding: .5rem 1rem;
+}
+
+.btn[aria-label] {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: var(--bg-color);
+        border-radius: inherit;
+        inset: 1.5px;
+    }
+
+    &::after {
+        content: attr(aria-label);
+        background-color: var(--text-color-primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        z-index: 1;
+    }
+
+    &:hover::after{
+            background: var(--brand-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+    }
+}
