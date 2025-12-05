@@ -1,0 +1,19 @@
+header {
+
+    & nav {
+        align-items: center;
+        gap: 1.5rem;
+
+        & a:first-child {
+            margin-right: auto;
+        }
+    }
+
+    .gradient-hover:hover {
+        background: var(--brand-gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+}

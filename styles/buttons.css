@@ -55,3 +55,16 @@
             background-clip: text;
     }
 }
+/* --------Desktop-------------- */
+@media (width >=80em) {
+
+    .btn {
+        font-size: 1.125rem;
+        padding: 1rem 2rem;
+    }
+
+    .btn-sm {
+        font-size: var(--fs-regular);
+        padding: .75rem 1.5rem;
+    }
+}
