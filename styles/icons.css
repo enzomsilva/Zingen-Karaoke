@@ -1,0 +1,38 @@
+.social-icon {
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.tiktok-icon {
+    background-image: url(../assets/icons/ic_tiktok.svg);
+
+    &:hover {
+        background-image: url(../assets/icons/ic_tiktok_hover.svg);
+    }
+}
+
+.instagram-icon {
+    background-image: url(../assets/icons/ic_instagram.svg);
+
+    &:hover {
+        background-image: url(../assets/icons/ic_instagram_hover.svg);
+    }
+}
+
+.twitter-icon {
+    background-image: url(../assets/icons/ic_twitter.svg);
+
+    &:hover {
+        background-image: url(../assets/icons/ic_twitter_hover.svg);
+    }
+}
+
+.discord-icon {
+    background-image: url(../assets/icons/ic_discord.svg);
+
+    &:hover {
+        background-image: url(../assets/icons/ic_discord_hover.svg);
+    }
+}
+
