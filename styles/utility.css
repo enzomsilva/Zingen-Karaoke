@@ -7,9 +7,14 @@
     padding-block: var(--padding-y-lg);
 }
 
+.py-lgx {
+    padding-block: var(--padding-y-lgx);
+}
+
 .py-xl {
     padding-block: var(--padding-y-xl);
 }
+
 
 .desktop-only {
     display: none;

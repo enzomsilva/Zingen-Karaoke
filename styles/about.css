@@ -1,0 +1,5 @@
+#about {
+    h2 {
+    font: var(--fw-eb) var(--fs-xl)/1.2 var(--ff-sans);
+    }
+}
