@@ -1,0 +1,166 @@
+#pricing {
+    & header {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        & span {
+            font: var(--fw-md) var(--fs-sm)/100% var(--ff-sans);
+            letter-spacing: 0.08em;
+            color: var(--brand-color-primary);
+            text-transform: uppercase;
+        }
+
+        & h2 {
+            font: var(--fw-eb) var(--fs-xl)/1.2 var(--ff-sans);
+            letter-spacing: -0.96px;
+        }
+    }
+
+    & .card {
+
+        & h3 {
+            margin-block: 0 .25rem;
+        }
+
+
+        & zin-pricing {
+            color: var(--text-color-primary, #F4F4F5);
+            font: var(--fw-eb) 2rem/1.2 var(--ff-sans);
+            letter-spacing: -1.28px;
+            display: block;
+            margin-block: 1.5rem;
+        }
+
+        &:not(:nth-child(1)) {
+            & zin-pricing::after {
+                content: "/mês";
+                color: var(--text-color-secondary);
+                font: var(--fw-base) var(--fs-regular)/1.25 var(--ff-sans);
+                margin-left: .25rem;
+            }
+        }
+
+        &:nth-child(3) {
+            & zin-pricing::after {
+                content: "/mês por pessoa";
+            }
+        }
+    }
+
+    & .btn {
+        width: 100%;
+        &::before {
+            background-color: var(--surface-color);
+        }
+    }
+
+    & .grid-display {
+        gap: 2rem;
+    }
+
+    & .divider {
+        height: 1px;
+        background: linear-gradient(90deg, #18181B 0%, #A1A1AA 50%, #18181B 100%);
+        margin-block: 2rem;
+    }
+
+    & small {
+        font: var(--fw-base) var(--fs-sm)/1.25rem var(--ff-sans);
+        color: var(--text-color-secondary);
+        display: inline-block;
+        margin-top: 1.5rem;
+    }
+
+
+    & ul {
+        display: grid;
+        gap: 1rem;
+
+        & li {
+            position: relative;
+            padding-left: 2rem;
+            line-height: 1.5;
+            color: var(--text-color-secondary);
+
+            &::before {
+                content: url(../assets/icons/Check.svg);
+                position: absolute;
+                left: 0px;
+            }
+        }
+    }
+
+
+    & .card:nth-child(2) {
+        position: relative;
+        padding-block: 4.5rem 1.5rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: var(--brand-gradient);
+            border-radius: inherit;
+            inset: -2px;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "1 mês grátis";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--brand-gradient);
+            padding: .75rem 2rem;
+            border-top-left-radius: 1.5rem;
+            border-end-end-radius: 1.5rem;
+            text-transform: uppercase;
+            color: var(--bg-color);
+            font: 600 .75rem/1rem var(--ff-sans);
+            letter-spacing: 0.96px;
+        }
+
+    }
+}
+
+@media (width >=80em) {
+    #pricing {
+        & header {
+            & h2 {
+                margin-inline: auto;
+                letter-spacing: -1.92px;
+                max-width: 50rem;
+            }
+        }
+
+        & .card {
+            padding: 2rem;
+            
+            & h3 {
+                font-size: 1.25rem;
+                line-height: 1.2;
+            }
+
+            
+            & zin-pricing {
+                letter-spacing: -1.6px;
+                font-size: 2.5rem;
+            }
+        }
+
+         & .card:nth-child(2) {
+            padding-block: 4.5rem 2rem;
+            padding-bottom: 6rem;
+         }
+
+         & .card:nth-child(3) {
+            & .divider {
+                margin-block: 1.5rem;
+            }
+         }
+
+         .grid-display {
+            align-items: center;
+         }
+
+    }
+}
