@@ -1,4 +1,4 @@
-.social-icon {
+.social-icon { 
     display: inline-block;
     height: 1.5rem;
     width: 1.5rem;
@@ -35,4 +35,3 @@
         background-image: url(../assets/icons/ic_discord_hover.svg);
     }
 }
-

@@ -1,0 +1,61 @@
+#download {
+    & > div {
+        background-color: var(--surface-color);
+        border: 1px solid var(--stroke-color);
+        border-radius: 1.5rem;
+        padding: 3rem 1.5rem 15rem;
+        position: relative;
+
+        & header {
+            margin-bottom: 2rem;
+            & span {
+                font: var(--fw-md) var(--fs-sm)/100% var(--ff-sans);
+                letter-spacing: 0.07em;
+                color: var(--brand-color-primary);
+                text-transform: uppercase;
+            }
+
+            & h2 {
+                font: var(--fw-eb) var(--fs-xl)/1.2 var(--ff-sans);
+                letter-spacing: -0.96px;
+                margin-block: .5rem;
+            }
+            
+            & p {
+                font: var(--fw-base) var(--fs-regular)/1.6 var(--ff-sans);
+                color: var(--text-color-secondary);
+            }
+        }
+
+        & header + div {
+            width: fit-content;
+            & img {
+            width: 9.625rem;
+            }
+        }
+
+        & img[src*="rapaz"] {
+            width: 14.5rem;
+            position: absolute;
+            bottom: 0px;
+            right: -3rem;
+        }
+        
+    }
+}
+
+@media (width >= 80em) {
+    #download {
+        & > div {
+            padding: 8.75rem 5rem;
+
+            & header {
+                max-width: 40rem;
+            }
+
+            & img[src*="rapaz"] {
+                width: 29.125rem;
+            }
+        }
+    }
+}

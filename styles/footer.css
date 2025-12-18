@@ -1,0 +1,78 @@
+footer {
+    padding-block: 3rem 1.5rem;
+
+    & .container {
+        padding-inline: .5rem;
+    }
+
+    & .container {
+
+        & > div:nth-child(1) {
+            gap: 3rem;
+
+            & nav {
+                display: grid;
+                gap: 4rem;
+
+                & span {
+                    font: var(--fw-md) var(--fs-sm)/100% var(--ff-sans);
+                    letter-spacing: 0.06em;
+                    color: var(--brand-color-primary);
+                    text-transform: uppercase;
+                }
+
+                & ul {
+                    display: grid;
+                    gap: 1.25rem;
+                }
+
+                & li {
+                    font: var(--fw-md) var(--fs-regular)/1.5 var(--ff-sans);
+                    color: var(--text-color-secondary);
+                }
+            }
+        }
+
+        & div:nth-child(2) {
+            gap: 1.5rem;
+            flex-direction: column;
+            margin-top: 3rem;
+
+            & div {
+                gap: 1.5rem;
+            }
+        }
+
+        & span {
+            font: var(--fw-base) var(--fs-sm)/1.7 var(--ff-sans);
+            color: var(--text-color-secondary);
+        }
+    }
+}
+
+@media (width >= 80em) {
+    footer {
+        padding-block: 5rem 2rem ;
+
+        & .container {
+
+            & > div:nth-child(1) {
+                grid-auto-columns: unset;
+                justify-content: space-between;
+
+                & nav {
+                    grid-auto-flow: column;
+                }
+
+                & ul {
+                    align-content: start;
+                }
+            }
+
+            & div:nth-child(2) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+}

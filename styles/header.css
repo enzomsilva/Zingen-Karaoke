@@ -9,11 +9,12 @@ header {
         }
     }
 
-    .gradient-hover:hover {
-        background: var(--brand-gradient);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-    }
+    
+}
 
+.gradient-hover:hover {
+    background: var(--brand-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }

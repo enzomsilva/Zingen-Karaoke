@@ -64,6 +64,12 @@
         margin-block: 2rem;
     }
 
+     & .card:nth-child(3) {
+            & .divider {
+                margin-block: 1.5rem;
+            }
+         }
+
     & small {
         font: var(--fw-base) var(--fs-sm)/1.25rem var(--ff-sans);
         color: var(--text-color-secondary);
@@ -152,13 +158,7 @@
             padding-bottom: 6rem;
          }
 
-         & .card:nth-child(3) {
-            & .divider {
-                margin-block: 1.5rem;
-            }
-         }
-
-         .grid-display {
+         & .grid-display {
             align-items: center;
          }
 
