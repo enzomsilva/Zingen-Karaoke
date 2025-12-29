@@ -38,7 +38,7 @@
 
 .container {
     --max-width: 375px;
-    width: min(var(--max-width), 100% - var(--padding-x) * 2);
+    width: min(var(--max-width), 100% - var(--padding-x) * 2); /* the min() will get the smallest value betweend the two separeted by the comma. If the second value is smaller, it will get 100% from the element's width and subtract the --padding-x value (that by the way this var() has nothing to do with the padding propriety)*/
     margin-inline: auto;
 }
 
